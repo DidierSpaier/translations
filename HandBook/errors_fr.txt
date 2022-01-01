@@ -1,0 +1,22 @@
+# stderr for the command  po4a-gettextize --localized-charset UTF-8 -f asciidoc -m HandBook.adoc -l fr_FR.HandBook.adoc -p fr_FR.HandBook.po 2>errors_fr.txt
+
+fr_FR.HandBook.adoc:501: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:502: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:504: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:505: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:514: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:1014: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:1015: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:1549: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:2203: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:2204: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+fr_FR.HandBook.adoc:2205: It seems that you are adding unindented content to an item. The standard allows this, but you may still want to change your document to use indented text to provide better visual clues to writers.
+po4a gettextize: Original has less strings than the translation (908<913). Please fix it by removing the extra entry from the translated file. You may need an addendum (cf po4a(7)) to reput the chunk in place after gettextization. A possible cause is that a text duplicated in the original is not translated the same way each time. Remove one of the translations, and you're fine.
+po4a gettextization: Structure disparity between original and translated files:
+msgid (at HandBook.adoc:532) is of type 'Plain text' while
+msgstr (at fr_FR.HandBook.adoc:530) is of type 'Title ====='.
+Original text: The installer can set up mount points for partitions shared with or used by Windows to allow access them from Slint. They should have a file system of type vfat, msdos or ntfs, either set up by Windows or created before running setup.
+Translated text: Actions gérées par le programme \"setup\".
+(result so far dumped to gettextization.failed.po)
+The gettextization failed (once again). Don't give up, gettextizing is a subtle art, but this is only needed once to convert a project to the gorgeous luxus offered by po4a to translators.
+Please refer to the po4a(7) documentation, the section "HOWTO convert a pre-existing translation to po4a?" contains several hints to help you in your task
