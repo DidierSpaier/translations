@@ -4,7 +4,7 @@ Procedure:
 
 sh potize.sh # Output HandBook.sh
 l=fr_FR sh gettextize.sh # Output fr_FR.HandBook.po
-l=fr_FR sh translate.sh2 # Triggers error message below:
+l=fr_FR sh translate.sh # Triggers error message below:
 Discard the translation of HandBook.pot (only 0% translated; need 80%).
 Your input po file fr_FR.HandBook.po seems outdated (The amount of entries differ between files: 894 is not 895
 ). Please consider running po4a-updatepo to refresh it.
