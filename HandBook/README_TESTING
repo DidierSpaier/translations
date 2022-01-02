@@ -14,7 +14,7 @@ grep ^msgid HandBook.pot > entries.pot
 grep ^msgid fr_FR.HandBook.po > entries.po
 diff -u  entries.pot entries.po gives an empty output.
 
-Doing this for pt_PT isntead of fr_FR gives similat results
+Doing this for pt_PT instead of fr_FR gives similar results
 
 Conclusion: I am puzzled.
 
