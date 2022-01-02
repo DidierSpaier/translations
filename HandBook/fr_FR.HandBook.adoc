@@ -161,10 +161,6 @@ wget https://slackware.uk/slint/x86_64/slint-14.2.1/iso/slint64-14.2.1.4.iso.sha
 ----
 
 Pour vérifier l'intégrité des fichiers téléchargés, tapez cette commande :
-sha256sum -c slint64-14.2.1.4.iso.sha256
-le résultat devrait être :
-OK
-
 ----
 sha256sum -c slint64-14.2.1.4.iso.sha256
 ----
@@ -503,14 +499,14 @@ réservé à GRUB et ne doit pas être formaté.
 * Pour démarrer en mode EFI une partition de type ESP (EFI System Partition) de taille
 100M pour stocker le chargeur EFI OS. Cette partition peut être créée en GPT comme dans
 une table de partitions DOS.
-* une partition de taille d'au moins 28G pour le système, de type Linux.
+* une partition de taille au moins 28G pour le système, de type Linux.
 
 Dans le cas d'un GPT, nous vous recommandons de définir à la fois une partition de démarrage BIOS et un ESP pour
 plus de flexibilité, permettant de démarrer Slint en EFI ainsi qu'en mode Legacy.
 
 La création d'autres partitions est optionnelle. Si vous voulez une partition de swap,
-devrait avoir le type d'échange Linux. Alternativement ou en plus, vous pouvez configurer un fichier de swap
-. 'setup' proposera de le configurer après avoir créé le système de fichiers de
+devrait avoir le type d'échange Linux. Alternativement ou en plus, vous pouvez configurer un fichier de swap.
+'setup' proposera de le configurer après avoir créé le système de fichiers de
 la partition racine.
 
 L'installateur inclut plusieurs applications de partitionnement : cfdisk, fdisk, sfdisk,
@@ -536,7 +532,7 @@ ADDSWAP pour configuraer votre/vos partition(s) de swap (facultatif)
 TARGET pour configurer vos partitions cibles
 SOURCE pour sélectionner le support source contenant les paquets logiciels
 INSTALL pour installer les paquets de logiciels
-CONFIGURE pour configurer votrsys  me Slint.
+CONFIGURE pour configurer votr systême Slint.
 ....
 
 Ces entrées sont commentées ci-dessous. Les étapes TARGET, SOURCE, INSTALLER et CONFIGURE
@@ -635,8 +631,8 @@ voulez garder, puis installer à nouveau et restaurez les fichiers sauvegardés.
 Choisissez un mot de passe fort, de sorte qu'il faudrait trop de temps pour qu'un voleur
 le découvre pour que cela en vaille la peine.
 
-Jamais ne se jouer avec l'en-tête dit "LUKS" situé sur la partition brute
-(la troisième, comme par exemple /dev/sda3 pour la partition brute au-dessus de la partition système Slint).  Pratiquement: ne créez un système de fichiers dans cette partition, ne l'incluez pas dans un vecteur RAID et généralement n'y écrivez rien:: toutes les données seraient irrémédiablement perdues !
+Ne jamais jouer avec l'en-tête dit "LUKS" situé sur la partition brute
+(la troisième, comme par exemple /dev/sda3 pour la partition brute au-dessus de la partition système Slint).  Pratiquement: ne créez un système de fichiers dans cette partition, ne l'incluez pas dans un vecteur RAID et généralement n'y écrivez rien: toutes les données seraient irrémédiablement perdues !
 ====
 
 Pour éviter les mots de passe faibles, l'installateur requiert que le mot de passe comprenne :
@@ -756,18 +752,18 @@ Depuis la version 14.2. de Slint. le premier utilisateur normal créé lors de l
 
 Pour activer le braille :
 
-. Rendez /etc/rc.d/rc.brltty exécutable en tapant en tant que root:
+. Rendez /etc/rc.d/rc.brltty exécutable en tapant en tant que root :
 +
 ----
 chmod 755 /etc/rc.d/rc.brltty
 ----
-. Faites partie du groupe braille, en tapant en tant que racine:
+. Faites partie du groupe braille, en tapant en tant que root :
 +
 ----
-usermod -G braille -un nom d'utilisateur
+usermod -G braille username
 ----
 +
-Dans la commande ci-dessus, remplacez le nom d'utilisateur par votre nom d'utilisateur.
+Dans la commande ci-dessus, remplacez username par votre nom d'utilisateur.
 . Ensuite, éditez en tant que root le fichier /etc/brltty.conf pour inclure vos paramètres.
 
 Pour activer la parole au niveau du système, tapez en tant que root :
@@ -910,7 +906,7 @@ Appuyer sur Alt+Tab permet de faire défiler les fenêtres sur le bureau.
 [[the_top_panel]]
 ==== Le panneau supérieur
 
-Il présente, de gauche à droite,
+Il présente, de gauche à droite :
 
 * Trois menus :
 ** Un menu Applications qui peut être ouvert en appuyant sur Alt+F1. À partir de là, vous pouvez ouvrir les autres menus en utilisant la touche fléchée droite. Vous pouvez utiliser les touches fléchées pour accéder au menu des autres.
@@ -933,7 +929,7 @@ Il présente, de gauche à droite,
 [[the_bottom_panel]]
 ==== Le panneau du bas
 
-Il présente, de gauche à droite:
+Il présente, de gauche à droite :
 
 * Une liste de fenêtres qui peut être configurée avec un clic droit sur la ligne de trois points verticaux au début et en choisissant les préférences. Cela permet également de démarrer le moniteur du système dans une fenêtre.
 * Un bouton *afficher le bureau*. Une partie gauche de celui-ci réduira ou masquera toutes les fenêtres, en cliquant à nouveau restaurera les fenêtres dans leur état précédent.
@@ -1009,8 +1005,8 @@ Maj+Alt+Tab Cycle arrière entre les fenêtres
 Contrôle+Alt+Tab Cycle entre les panneaux et le bureau
 Maj+Contrôle+Alt+Tab Cycle entre les panneaux et le bureau
 ----
-Une fois dans un environnement graphique, vous pouvez basculer entre celui-ci et une console
-. Disons que vous voulez utiliser tty2 (tty1 étant occupé) :
+Une fois dans un environnement graphique, vous pouvez basculer entre celui-ci et une console.
+Disons que vous voulez utiliser tty2 (tty1 étant occupé) :
 Appuyez sur `Ctrl+Alt+F2`, puis identifiez-vous. +
 Appuyez sur `Ctrl+Alt+F7` pour revenir à l'environnement graphique.
 
@@ -1099,8 +1095,8 @@ Bouton 4 : Défilement de la roue vers le haut +
 Bouton 5 : Défilement de la roue vers le bas
 Bouton 6: (je ne sais pas, je pensais que c'était sur les souris pour joueurs) +
 
-Les paramètres par défaut répertoriés ci-dessous par catégorie peuvent être modifiés à partir du CCSM
-. Nous indiquons le nom abrégé du plugin entre crochets.
+Les paramètres par défaut répertoriés ci-dessous par catégorie peuvent être modifiés à partir du CCSM.
+Nous indiquons le nom abrégé du plugin entre crochets.
 
 . Catégorie Général
 +
@@ -1338,10 +1334,10 @@ Si le braille n'a pas été activé pendant l'installation ou a été désactiv�
 ----
 chmod 755 /etc/rc.d/rc.brltty
 ----
-. Faites partie du groupe braille, en tapant en tant que racine:
+. Faites partie du groupe braille, en tapant en tant que root :
 +
 ----
-usermod -G braille -un nom d'utilisateur
+usermod -G braille username
 ----
 +
 Dans la commande ci-dessus, remplacez username par votre nom d'utilisateur.
@@ -1403,7 +1399,7 @@ Le code de langue a le plus souvent deux caractères, comme 'en' 'es' ou 'fr'
 ----
 Toutes les voix listées sont disponibles dans Orca et speechd-up, et aussi fenrir si configuré pour utiliser le speech-dispatcher.
 
-Vous pouvez obtenir des voix supplémentaires pour flite et mbrola, associées aux modules 
+Vous pouvez obtenir des voix supplémentaires pour flite et mbrola, associées aux modules
 flite-generic et espeak-ng-mbrola-generic.
 
 Vous pouvez toujours savoir lesquelles sont installées ou non en tapant en tant que root :
@@ -1544,8 +1540,7 @@ spk key_4 augmente la hauteur du son (ne fonctionne pas avec speechd-up)
 spk key_5 diminue la vitesse de lecture
 spk key_6 augmente la vitesse de lecture
 ----
-Dans la table ci-dessus spk est la touche speakup : CapLock, ou Ins/0 sur un pavé numérique
-. Par exemple, pour augmenter la vitesse de lecture vous pouvez appuyer et maintenir enfoncé la touche
+Dans la table ci-dessus spk est la touche speakup : CapLock, ou Ins/0 sur un pavé numérique. Par exemple, pour augmenter la vitesse de lecture vous pouvez appuyer et maintenir enfoncé la touche
 CapsLock puis appuyer sur la touche 6.
 
 Certains paramètres disponibles uniquement sur des synthétiseurs matériels spécifiques n'ont pas
@@ -1570,11 +1565,11 @@ La touche Insertion ou 0 sur le pavé numérique agit comme une touche Maj. Par 
 Ins 2 signifie « Maintenir la touche Insérer enfoncée comme une touche Maj. et appuyer sur 2 ».
 Désactivez le verrouillage des touches numériques pour utiliser Speakup.
 
-Portée : ces raccourcis clavier peuvent être utilisés avec des synthétiseurs matériles et avec
-espeakup, ainsi qu'avec speechd-up. Cependant le réglage de la hauteur ou du volume du son
+Portée : ces raccourcis clavier peuvent être utilisés avec des synthétiseurs matériels et avec
+espeakup, ainsi qu'avec speechd-up. Cependant le réglage du ton ou du volume de la parole
 en utilisant les raccourcis clavier n'est pas disponible lors de l'utilisation de speechd-up.
 
-Premières clés à retenir :
+Premiers raccourcis à retenir :
 ----
 ImpressionÉcran Activer/désactiver Speakup
 Ins F1 Aide de Speakup (appuyer sur Espace pour quitter l'aide)
@@ -1640,7 +1635,7 @@ Portée : ces raccourcis clavier peuvent être utilisés avec des synthétiseurs
 espeakup, ainsi qu'avec speechd-up. Cependant le réglage du ton ou du volume de la parole
 en utilisant les raccourcis clavier n'est pas disponible lors de l'utilisation de speechd-up.
 
-Premières raccourcis à retenir :
+Premiers raccourcis à retenir :
 ----
 ImpressionÉcarn Activer/désactiver Speakup
 CapsLock F1 Aide de Speakup (appuyer sur Espace pour quitter l'aide)
@@ -1667,7 +1662,7 @@ CapsLock F2 Définir la fenêtre
 CapsLock F3 Effacer la fenêtre
 CapsLock F4 Activer la fenêtre
 ----
-Autres clés :
+Autres raccourcis :
 ----
 CapsLock F5 Editer quelque
 CapsLock F6 Edit la plupart
@@ -2139,7 +2134,7 @@ Ces deux applications en ligne de commande contrôlent un démon PulseAudio.
 
 WARNING: pacmd tapé seul fait apparaître une boîte de dialogue interactive. Appuyez sur Ctrl+d pour quitter mais ne tapez pas exit, car cela tuerait PulseAudio!
 
-Pour en savoir plus:
+Pour en savoir plus :
 ----
 man pactl
 man pacmd
@@ -2198,8 +2193,8 @@ taper `exit` pour récupérer le statut de l'utilisateur normal.
 
 Les deux commandes mentionnées sont `nmtui` (boîtes de dialogue) ou `nmcli` (pure ligne de commande), les deux sont accessibles.
 
-Si vous préférez travailler en ligne de commande, lisez d'abord la documentation nmcli
-. Tapez simplement `nmcli --help` et `man nmcli`
+Si vous préférez travailler en ligne de commande, lisez d'abord la documentation nmcli.
+Tapez simplement `nmcli --help` et `man nmcli`
 pour trouver tous les détails.
 Tandis que `nmcli` offre plus de possibilités, dans la plupart des cas d'utilisation, la fonctionnalité de `nmtui` sera suffisante pour configurer votre réseau sans fil, donc nous allons
 le décrire ici.
@@ -2351,7 +2346,7 @@ Des exemples de commandes sont fournis dans <<bash shell, [shell]>>.
 
 [[console]]Console:: Le mot "console" fait référence au début des systèmes
 de l'ordinateur, lorsque l'administrateur système tapait des commandes sur un périphérique, composé d'un clavier
-et une imprimante, liés à l'ordinateur, les commandes saisies et la réponse 
+et une imprimante, liés à l'ordinateur, les commandes saisies et la réponse
 de l'ordinateur étant tous les deux imprimé sur la console.
 +
 Dans les ordinateurs personnels, l'utilisateur tape les commandes sur le clavier et leur sortie

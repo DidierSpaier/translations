@@ -156,10 +156,6 @@ wget https://slackware.uk/slint/x86_64/slint-14.2.1/iso/slint64-14.2.1.4.iso.sha
 ----
 
 Para verificar a integridade dos ficheiros transferidos, escreva este comando:
-sha256sum -c slint64-14.2.1.4.iso.sha256
-o resultado deve ser:
-OK
-
 ----
 sha256sum -c slint64-14.2.1.4.iso.sha256
 ----
@@ -425,8 +421,8 @@ O instalador tem vários modos de interação consigo, o utilizador:
 [[Automatic_installation]]
 ==== Instalação automática
 
-No modo automático, o instalador fornece definições predefinidas, incluindo o ambiente gráfico (Mate). Depois de ter começado
-o seu novo sistema, pode rever e alterar todas as definições.
+No modo automático, o instalador fornece definições predefinidas, incluindo o ambiente gráfico (Mate). Depois de ter começado o
+seu novo sistema, pode rever e alterar todas as definições.
 
 As etapas de instalação estão detalhadas abaixo.
 
@@ -499,8 +495,7 @@ Para instalar o Slint na sua própria unidade, precisará:
 GRUB neste contexto. Um tamanho de 1M para essa partição é suficiente. É
 reservado para GRUB e não deve ser formatado.
 * Para arrancar no Modo EFI, uma partição do tipo ESP (EFI System Partition) de tamanho
-100M para armazenar o carregador OS EFI. Esta partição pode ser criada em uma GPT como uma tabela de partição
-.
+100M para armazenar o carregador OS EFI. Esta partição pode ser criada em uma GPT como uma tabela de partição.
 * uma partição do tamanho pelo menos 28G para o sistema, do tipo Linux.
 
 No caso de um GPT, recomendamos definir uma partição BIOS Boot e um ESP para
@@ -732,8 +727,7 @@ e leia /usr/doc/slapt-get*/README.slaptgetrc.Slint
 
 ===== Configuração
 
-Aqui estão os utilitários que você pode usar para (re)configurar seu sistema Slint após a instalação
-. They are presented in further details in chapter <<Manage_your_system, Gerir o sistema>>.
+Aqui estão os utilitários que você pode usar para (re)configurar seu sistema Slint após a instalação. They are presented in further details in chapter <<Manage_your_system, Gerir o sistema>>.
 
 A menos que estes utilitários sejam apontados de outra forma devem ser usados como raiz. Para se tornar root,
 ex: obter o status 'admin' e privilégios tipo "su -" e então a palavra-passe do raiz's.
@@ -857,8 +851,7 @@ No momento da instalação, você escolheu iniciar Slint no modo texto ou gráfi
 
 Após a instalação, se você puder alterar o modo de digitação como `login-choicser`,
 no modo de console, bem como no modo gráfico (em um <<terminal, terminal>>). Este
-comando permite escolher `texto` (sinônimo do modo console), ou, para
-o modo gráfico, entre vários gerentes de exibição. Sua escolha será eficaz
+comando permite escolher `texto` (sinônimo do modo console), ou, para o modo gráfico, entre vários gerentes de exibição. Sua escolha será eficaz
 na próxima inicialização do computador.
 
 Agora apresentaremos os ambientes gráficos, e depois como usar uma shell.
@@ -1061,7 +1054,7 @@ lançadores para mate-terminal, caja (gestor de ficheiros), Firefox, Thunderbird
 geany. +
 À sua direita ainda da esquerda para a direita:
 uma área de notificação +
-o botão de bloqueio de ecrã +
+um botão de bloqueio de ecrã +
 um botão de sair +
 um botão de parar ou reiniciar..
 
@@ -1171,8 +1164,7 @@ initiate_key = Alt+F7 (Esc para parar de se mover) +
 initiate_button = Alt+Botão2 (manter Botão2 enquanto move o rato) +
 initiate_key = Alt+F8 (Esc para parar de se mover) +
 +
-[switcher] Comutador de aplicações (troque entre janelas ou painéis e
-                                 o ambiente gráfico) +
+[switcher] Comutador de aplicações (troque entre janelas ou painéis e o ambiente gráfico) +
 next_window_key = Alt+Tab (percorra entre janelas) +
 prev_window_key = Shift+Alt+Tab +
 next_panel_key = Control+Alt+Tab (percorra entre painéis e o ambiente gráfico) +
@@ -1240,7 +1232,7 @@ Você pode alternar entre o console e o ambiente gráfico:
 Você pode (mas isto não é recomendado para iniciantes) fazer login diretamente como root. Para fazer este tipo *raiz* como utilizador, em seguida, raiz'.
 Para informar (e avisá-lo sobre os riscos e responsabilidades associados), o prompt vai parecer com isto: +
 *root@darkstar:s~#* +
-o caractere # (sinal de número, também nomeado hash) indica que os comandos serão digitados como root (não como utilizador normal), com os direitos que lhe estão associados, mas também com riscos e responsabilidades.
+um caractere # (sinal de número, também nomeado hash) indica que os comandos serão digitados como root (não como utilizador normal), com os direitos que lhe estão associados, mas também com riscos e responsabilidades.
 
 Se você já está logado como utilizador normal, você pode digitar "virar root": +
 *su -* +
@@ -1563,8 +1555,7 @@ spk key_4    pitch_increase (não funciona com o speechd-up)
 spk key_5    rate_decrease
 spk key_6    rate_increase
 ----
-Na tabela acima do spk está a tecla CapLock, ou Ins/0 em um teclado numérico
-. Por exemplo, para aumentar a taxa que você pode pressionar e segurar a tecla CapsLock
+Na tabela acima do spk está a tecla CapLock, ou Ins/0 em um teclado numérico. Por exemplo, para aumentar a taxa que você pode pressionar e segurar a tecla CapsLock
 e, em seguida, pressionar a tecla 6.
 
 Algumas configurações disponíveis apenas para sintetizadores de hardware específicos não
@@ -1784,8 +1775,8 @@ Você também pode executá-lo manualmente
 
 Isto requer, naturalmente, que a máquina esteja conectada à Internet.
 
-Para baixar e instalar pacotes atualizados ou reconstruídos como raiz,
-o seguinte comando:
+Para baixar e instalar pacotes atualizados ou reconstruídos como raiz, o
+seguinte comando:
 ----
 lapt-get --upgrade
 ----
@@ -2205,13 +2196,13 @@ como mate-terminal, depois digite a palavra-passe raiz.
 A instalação da rede é feita pelo script `netsetup`.
 Assim, basta digitar o comando `netsetup` nesse
 mesmo terminal, onde acabou de adquirir privilégios de root.
-A primeira vez que você pedir o nome de host da sua máquina. você pode escolher qualquer nome
-, mas lembre-se de que ele deve ser uma única palavra.
+A primeira vez que você pedir o nome de host da sua máquina. você pode escolher qualquer nome,
+mas lembre-se de que ele deve ser uma única palavra.
 Então perguntam-lhe o nome do domínio. Se a máquina não é um servidor
 você pode escolher qualquer pessoa.
 Depois disso, você será perguntado como a sua máquina se conecta à rede. A menos que
-tenha uma boa razão para não (e sabe o que está a fazer), manter
-o `NetworkManager` predefinido para configurar automaticamente a rede.
+tenha uma boa razão para não (e sabe o que está a fazer), manter o `NetworkManager`
+predefinido para configurar automaticamente a rede.
 
 Para conexões com fio, isso deve ser suficiente para estar conectado na próxima inicialização
 automaticamente.
@@ -2220,8 +2211,7 @@ Para configurar uma ligação sem fios, dois comandos estão disponíveis ao usa
 a linha de comandos.
 
 Novamente, você pode digitar os comandos diretamente no console ou em um terminal gráfico de
-como mate-terminal. Digite-os como utilizador normal não como raiz
-.
+como mate-terminal. Digite-os como utilizador normal não como raiz.
 Se você já seguiu essas instruções e se tornou root, apenas
 digite `exit` para recuperar o status normal do utilizador.
 
@@ -2245,8 +2235,8 @@ Se nenhuma ligação sem fio foi definida, escolha `Ativar uma ligação`.
 A partir de cima para baixo, primeiro as conexões com fio (se houver) serão
 propostas, depois que todas as redes sem fio acessíveis serão listadas.
 Navegue com as setas para baixo e para cima para selecionar a rede que você quer,
-em seguida, digite Enter: provavelmente será solicitada a chave de criptografia
-. Digite-o, use a tecla Tab para confirmar, e depois saia e você terminou.
+em seguida, digite Enter: provavelmente será solicitada a chave de criptografia.
+Digite-o, use a tecla Tab para confirmar, e depois saia e você terminou.
 
 Apenas no modo gráfico, ao invés de `nmcli` ou `nmtui` , você pode usar a aplicação
 `nm-connection-editor`.
@@ -2419,8 +2409,8 @@ portátil: ele pode ser movido de um computador para outro.
 
 [[display_manager]]Gestor de ecrã::
 Um gestor de ecrã (ou gestor de acesso) é um software que mostra uma janela no
-qual pede o nome de acesso e a palavra-passe do utilizador, depois inicia
-o ambiente gráfico escolhido pelo referido utilizador.
+qual pede o nome de acesso e a palavra-passe do utilizador, depois inicia o
+ambiente gráfico escolhido pelo referido utilizador.
 
 [[encryption]]Encriptação::
 A criptografia é o processo de conversão de dados num formulário não reconhecido ("encriptado"). É normalmente usado para proteger informações confidenciais para que apenas
@@ -2495,8 +2485,8 @@ permite lidar com mais partições e unidades maiores.
 Uma sequência preparada de instruções para o sistema para realizar uma tarefa definida. O termo "programa" engloba aplicações escritas na Linguagem de Comando Shell, linguagens de entrada de utilidade complexa (por exemplo, awk, lex, e assim por diante) e linguagens de alto nível. [POSIX]
 
 [[RAM]]RAM::
-RAM significa Memória de Acesso Aleatório. Este tipo de dispositivo armazena dados voláteis,
-o que significa que os dados são apagados quando a energia é desligada.
+RAM significa Memória de Acesso Aleatório. Este tipo de dispositivo armazena dados voláteis, o
+que significa que os dados são apagados quando a energia é desligada.
 
 [[shell]]Shell:: Um programa que interpreta sequências de entrada de texto como comandos. Pode operar em um fluxo de entrada ou pode alertar e ler comandos de um terminal de forma interativa. The syntax of the commands
 that can be interpretd by the shell can vary along the shell in use but are mainly defined in the the chapter

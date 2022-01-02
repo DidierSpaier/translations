@@ -497,11 +497,11 @@ The installer uses the GRUB software for both EFI and Legacy booting.
 To install Slint in its own drive you will need:
 
 * To boot in Legacy mode with a GPT, a partition of type BIOS Boot needed by
-   GRUB in this context. A size of 1M for this partition is enough. It is
-   reserved for GRUB and should not be formatted.
+GRUB in this context. A size of 1M for this partition is enough. It is
+reserved for GRUB and should not be formatted.
 * To boot in EFI mode a partition of type ESP (EFI System Partition) of size
-   100M to store the EFI OS loader. This partition can be created in a GPT as in
-   a DOS partition table.
+100M to store the EFI OS loader. This partition can be created in a GPT as in
+a DOS partition table.
 * a partition of size at least 28G for the system, of type Linux.
 
 In case of a GPT, we recommend setting both a BIOS Boot partition and an ESP for
