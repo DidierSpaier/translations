@@ -1,0 +1,21 @@
+Tested with po4a-0.66
+
+Procedure:
+
+sh potize.sh # Output HandBook.sh
+l=fr_FR sh gettextize.sh # Output fr_FR.HandBook.po
+l=fr_FR sh translate.sh2 # Triggers error message below:
+Discard the translation of HandBook.pot (only 0% translated; need 80%).
+Your input po file fr_FR.HandBook.po seems outdated (The amount of entries differ between files: 894 is not 895
+). Please consider running po4a-updatepo to refresh it.
+
+However, here if I type:
+grep ^msgid HandBook.pot > entries.pot
+grep ^msgid fr_FR.HandBook.po > entries.po
+diff -u  entries.pot entries.po gives an empty output.
+
+Doing this for pt_PT isntead of fr_FR gives similat results
+
+Conclusion: I am puzzled.
+
+Didier
