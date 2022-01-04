@@ -4,18 +4,21 @@ Procedure:
 
 sh potize.sh # Output HandBook.sh
 l=fr_FR sh gettextize.sh # Output fr_FR.HandBook.po
-l=fr_FR sh translate.sh # Triggers error message below:
-Discard the translation of HandBook.pot (only 0% translated; need 80%).
-Your input po file fr_FR.HandBook.po seems outdated (The amount of entries differ between files: 894 is not 895
-). Please consider running po4a-updatepo to refresh it.
+sed i "s~, dummy~~" fr_FR.HandBook.po
+l=fr_FR sh translate.sh # Output fr_FR.HandBook.2.adoc
+Caveat: diff -u fr_FR.HandBook.adoc fr_FR.HandBook.2.adoc
+give like:
+-switch-on emacspeak +
+-switch-on speechd-el +
+-switch-off emacspeak +
+-switch-off speechd-el +
++switch-on emacspeak + switch-on speechd-el + switch-off emacspeak + switch-off speechd-el +
 
-However, here if I type:
-grep ^msgid HandBook.pot > entries.pot
-grep ^msgid fr_FR.HandBook.po > entries.po
-diff -u  entries.pot entries.po gives an empty output.
+However in the case the \n should be preserved
 
-Doing this for pt_PT instead of fr_FR gives similar results
+Other issue:
 
-Conclusion: I am puzzled.
+if an asciidoc file include lines beginning with <letter o><space> they are
+processed by po4a-gettextize like it it would have begun with <dot><space>
 
 Didier
