@@ -1,1 +1,1 @@
-po4a-translate -f asciidoc -o compat=asciidoctor -m HandBook.pot -M UTF-8 -l $l.HandBookOutput.adoc -p $l.HandBook.2.adoc
+po4a-translate -f asciidoc -o compat=asciidoctor -m HandBook.adoc -M UTF-8 -l updated/${l}.HandBook.adoc -p ${l}.HandBook.po

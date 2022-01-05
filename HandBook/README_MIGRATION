@@ -1,0 +1,58 @@
+Procedure used to migrate from Asciidoc to PO
+
+1. Download the source file and the translations from Crowdin in asciidoc
+format.
+
+2. Run sh potize.sh to build HandBoook.pot from HandBook.adoc
+
+3. For each translation, run: l=<ll_TT> sh gettextize.sh to try to build
+<ll_TT>.HandBook.po from <ll_TT>.HandBook.adoc
+
+4. fix the errors found at the previous step editing by hand the files
+<ll_TT>.HandBook.adoc and HandBook.adoc. Not funny at all to do :(
+After edit these files are sored in ./asciidoc
+
+5. Run again l=<ll_TT> sh gettextize.sh to actually build the PO files
+
+6. Copy the POT file and the PO files in ./PO
+
+7. To check the ability to translate the PO files to PO format, remove the
+"fuzzy" tags from the PO files, the for each PO file run
+l=<ll_TT> sh translate.sh
+
+8. Fix the errors found at the previous step, editing each PO file to:
+- insure that the translated string ends with a \n or not, as the source string
+- insure that no translated line begins with ". ","o " or "O " as this
+de-synchronize the source and the translation
+
+9. Run again l=<ll_TT> sh translate.sh, to build the new <ll_TT>.HandBook.adoc
+files. These file have been built only to make sure the PO files are clean,
+the files in ./asciidoc are those downloaded from Crowdin with only the edits
+performed at step 4.
+
+It appears that in some translations consecutive lines including links (to
+display a sub-menu) are merged, but this is a small issue, as it will be solved
+post-processing the .adoc files with a simple sed command.
+
+Other issues found (for which workarounds have been used), which will reported
+to the po4a developers:
+
+1. If an asciidoc file lines beginning with <letter o><space> or
+<letter O><space> are processed by po4a-gettextize as it if they would have
+begun with <dot><space>. I
+
+2. If this source string in English:
+==  Install Slint
+if translated in Ukrainian:
+==  Встановлення Slint
+or in Russian:
+==  Установка Slint
+I get error message like this for Ukrainian:
+
+po4a gettextization: Structure disparity between original and translated files:
+msgid (at HandBook.adoc:103) is of type 'Title ==' while
+msgstr (at uk_UA.HandBook.adoc:103 uk_UA.HandBook.adoc:309) is of type 'Title ==='.
+
+and similar for Ukrainian.
+
+Didier
