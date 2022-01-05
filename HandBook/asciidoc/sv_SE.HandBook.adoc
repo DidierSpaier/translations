@@ -644,8 +644,8 @@ Välj en stark lösenfras, så att det skulle ta för mycket tid för en rövare
 upptäcka för att det ska vara värt besväret.
 
 Aldrig någonsin fiol med den så kallade "LUKS header" ligger på den råa partitionen
-(den tredje, som e. . /dev/sda3 för den råa partitionen ovanpå systempartitionen Slint.
-Praktiskt: don'skapa ett filsystem i denna partition,
+(den tredje, som e. . /dev/sda3 för den råa partitionen ovanpå systempartitionen Slint
+.  Praktiskt: don'skapa ett filsystem i denna partition,
 don't göra det en del av en RAID array och generellt don't skriva till det: alla data
 skulle vara oåterkalleligt förlorade!
 ====
@@ -915,7 +915,7 @@ Skrivbordet omfattar hela skärmen, på vilka andra komponenter kan sättas, i f
 
 * rotkatalogen i filhanteraren
 * din hemkatalog i filhanteraren
-* slint Control Center
+* Slint Control Center
 * papperskorgen kan, där placeras filer som du tänker ta bort men gjorde't ännu.
 
 Windows av program du startar som också sätta på skrivbordet.
@@ -1108,23 +1108,22 @@ ccsm &
 ----
 ===== Nyckelbindningar för Compiz fönsterhanterare
 
-In the default settings indicated below the key or mouse buttons are
-named like this:
+I de standardinställningar som visas nedanför tangenterna eller musknapparna är namngivna så här:
 
-Super: Windows key on most keyboards +
-Button1: Left Mouse Button (if used with the right hand) +
-Button2: Centre Mouse Button, or click with the scroll wheel) +
-Button3: Right Mouse Button (if used with the right hand) +
-Button4: Scroll Wheel Up +
-Button5: Scroll Wheel Down
-Button6: (I don't know, I thought that was on mouses for gamers) +
+Super: Windows-tangenten på de flesta tangentbord +
+Knapp1: Vänster musknapp (om den används med höger hand) +
+Knapp2: Mittens musknapp eller klicka med rullhjulet) +
+Knapp3: Höger musknapp (om den används med höger hand) +
+Knapp4: Rulla hjulet upp +
+Knapp5: Rulla hjulet ner
+Knapp6: (Jag vet inte, Jag trodde att var på möss för spelare) +
 
-The default settings listed below by category can be changed from the
-CCSM. We indicate the short name of the plugin between square brackets.
+De standardinställningar som anges nedan efter kategori kan ändras från 
+CCSM. Vi anger det korta namnet på insticksprogrammet mellan hakparenteser.
 
-. Category General
+. Kategori Allmänt
 +
-[core] General options, tab "key bindings": +
+[core] Allmänna alternativ, tab "key bindings": +
 close_window_key = Alt+F4 +
 raise_window_button = Control+Button6 +
 lower_window_button = Alt+Button6 +
@@ -1136,58 +1135,58 @@ window_menu_button = Alt+Button3 +
 show_desktop_key = Control+Alt+d +
 toggle_window_shaded_key = Control+Alt+s +
 +
-[matecompat] Mate Compatibility +
+[matecompat] Mate-kompatibilitet +
 main_menu_key = Alt+F1 +
 run_key = Alt+F2 +
 
-. Category Accessibility
+. Kategoritillgänglighet
 +
-[addhelper] Dim inactive (less light on non focused windows) +
+[addhelper] Dim inaktiv (mindre ljus på icke fokuserade fönster) +
 toggle_key = Super+p +
 +
-[colorfilter] (Filter color for accessibility purposes) +
+[colorfilter] (Filterfärg för tillgänglighetssyften) +
 toggle_window_key = Super+Alt+f +
 toggle_screen_key = Super+Alt+d +
 switch_filter_key = Super+Alt+s +
 +
-[ezoom] Enhanced Zoom Desktop +
+[ezoom] Förbättrad Zoom Skrivbord +
 zoom_in_button = Super+Button4 +
 zoom_out_button = Super+Button5 +
-zoom_box_button = Super+Button2 (zoom out to go back to normal) +
+zoom_box_button = Super+Button2 (zooma ut för att gå tillbaka till normal) +
 +
-[neg] Negative (toggle inverse colors of the window or screen) +
+[neg] Negativ (växla inverterade färger i fönstret eller skärmen) +
 window_toggle_key = Super+n +
 screen_toggle_key = Super+m +
 +
-[obs] Opacity, Brightness and Saturation adjustments +
+[obs] Opacitet, ljusstyrka och mättnadsjusteringar +
 opacity_increase_button = Alt+Button4 +
 opacity_decrease_button = Alt+Button5 +
 +
-[showmouse] (Increase visibility of the mouse pointer) +
-initiate = Super+k +
+[showmouse] (Öka synligheten för muspekaren) +
+initiera = Super+k +
 
-. Category Window Management
+. Kategori Fönsterhantering
 +
-[move] Move window +
-initiate_button = Alt+Button1 (hold Button1 while moving the mouse) +
-initiate_key = Alt+F7 (Esc to stop moving) +
+[move] Flytta fönster +
+initiate_button = Alt+Button1 (håll knapp1 vid förflyttning av musen) +
+initiate_key = Alt+F7 (Esc för att sluta flytta) +
 +
-[resize] Resize window +
-initiate_button = Alt+Button 2 (hold Button2 while moving the mouse) +
-initiate_key = Alt+F8 (Esc to stop moving) +
+[resize] Ändra storlek på fönster +
+initiate_button = Alt+Button1 (håll knapp1 vid förflyttning av musen) +
+initiate_key = Alt+F7 (Esc för att avsluta) +
 +
-[switcher] Application switcher (switch between windows or panels and
-                                 the desktop) +
-next_window_key = Alt+Tab (cycle between windows) +
+[switcher] Applikationsväxlare (växla mellan fönster eller paneler och
+                                 skrivbordet) +
+next_window_key = Alt+Tab (växla mellan fönster) +
 prev_window_key = Shift+Alt+Tab +
-next_panel_key = Control+Alt+Tab (cycle between panels and desktop) +
+next_panel_key = Control+Alt+Tab (växla mellan panelerna och skrivbordet) +
 prev_panel_key = Shift+Control+Alt+Tab +
 
 
-===== Hur man lägger till en anpassad nyckelbindning för Mate.
+===== Hur du lägger till en anpassad tangentbindning för Mate.
 
-Let's take an example: we want that Alt+F3 starts firefox.
-skriv in en terminal eller i kommandot Run (tas upp genom att trycka på Alt + F2):
+Låt oss ta ett exempel: vi vill att Alt+F3 startar firefox.
+skriv in i en terminal eller i kommandot Run (hämtas upp genom att trycka på Alt+F2):
 ----
 mate-keybinding-egenskaper
 ----

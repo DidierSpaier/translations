@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-04 22:52+0100\n"
-"PO-Revision-Date: 2022-01-04 23:57+0100\n"
-"Last-Translator: Unknown <didier@darkstar.machine.fr>\n"
+"POT-Creation-Date: 2022-01-05 20:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -4421,8 +4421,8 @@ msgid ""
 "In the default settings indicated below the key or mouse buttons are named "
 "like this:"
 msgstr ""
-"In the default settings indicated below the key or mouse buttons are named "
-"like this:"
+"I de standardinställningar som visas nedanför tangenterna eller musknapparna "
+"är namngivna så här:"
 
 #. type: Plain text
 #: HandBook.adoc:1117
@@ -4434,11 +4434,11 @@ msgid ""
 "Button4: Scroll Wheel Up + Button5: Scroll Wheel Down Button6: (I don't "
 "know, I thought that was on mouses for gamers) +"
 msgstr ""
-"Super: Windows key on most keyboards + Button1: Left Mouse Button (if used "
-"with the right hand) + Button2: Centre Mouse Button, or click with the "
-"scroll wheel) + Button3: Right Mouse Button (if used with the right hand) + "
-"Button4: Scroll Wheel Up + Button5: Scroll Wheel Down Button6: (I don't "
-"know, I thought that was on mouses for gamers) +"
+"Super: Windows-tangenten på de flesta tangentbord + Knapp1: Vänster musknapp "
+"(om den används med höger hand) + Knapp2: Mittens musknapp eller klicka med "
+"rullhjulet) + Knapp3: Höger musknapp (om den används med höger hand) + "
+"Knapp4: Rulla hjulet upp + Knapp5: Rulla hjulet ner Knapp6: (Jag vet inte, "
+"Jag trodde att var på möss för spelare) +"
 
 #. type: Plain text
 #: HandBook.adoc:1120
@@ -4447,14 +4447,14 @@ msgid ""
 "The default settings listed below by category can be changed from the "
 "CCSM. We indicate the short name of the plugin between square brackets."
 msgstr ""
-"The default settings listed below by category can be changed from the "
-"CCSM. We indicate the short name of the plugin between square brackets."
+"De standardinställningar som anges nedan efter kategori kan ändras från "
+"CCSM. Vi anger det korta namnet på insticksprogrammet mellan hakparenteser."
 
 #. type: Plain text
 #: HandBook.adoc:1122
 #
 msgid "Category General"
-msgstr "Category General"
+msgstr "Kategori Allmänt"
 
 #. type: Plain text
 #: HandBook.adoc:1134
@@ -4467,9 +4467,9 @@ msgid ""
 "window_menu_button = Alt+Button3 + show_desktop_key = Control+Alt+d + "
 "toggle_window_shaded_key = Control+Alt+s +"
 msgstr ""
-"[core] General options, tab \"key bindings\": + close_window_key = Alt+F4 + "
-"raise_window_button = Control+Button6 + lower_window_button = Alt+Button6 + "
-"minimize_window_key = Alt+F9 + maximize_window_key = Alt+F10 + "
+"[core] Allmänna alternativ, tab \"key bindings\": + close_window_key = "
+"Alt+F4 + raise_window_button = Control+Button6 + lower_window_button = "
+"Alt+Button6 + minimize_window_key = Alt+F9 + maximize_window_key = Alt+F10 + "
 "unmaximize_window_key = Alt+F5 + window_menu_key = Alt+space + "
 "window_menu_button = Alt+Button3 + show_desktop_key = Control+Alt+d + "
 "toggle_window_shaded_key = Control+Alt+s +"
@@ -4481,14 +4481,14 @@ msgid ""
 "[matecompat] Mate Compatibility + main_menu_key = Alt+F1 + run_key = Alt+F2 "
 "+"
 msgstr ""
-"[matecompat] Mate Compatibility + main_menu_key = Alt+F1 + run_key = Alt+F2 "
+"[matecompat] Mate-kompatibilitet + main_menu_key = Alt+F1 + run_key = Alt+F2 "
 "+"
 
 #. type: Plain text
 #: HandBook.adoc:1140
 #
 msgid "Category Accessibility"
-msgstr "Category Accessibility"
+msgstr "Kategoritillgänglighet"
 
 #. type: Plain text
 #: HandBook.adoc:1143
@@ -4497,8 +4497,8 @@ msgid ""
 "[addhelper] Dim inactive (less light on non focused windows) + toggle_key = "
 "Super+p +"
 msgstr ""
-"[addhelper] Dim inactive (less light on non focused windows) + toggle_key = "
-"Super+p +"
+"[addhelper] Dim inaktiv (mindre ljus på icke fokuserade fönster) + "
+"toggle_key = Super+p +"
 
 #. type: Plain text
 #: HandBook.adoc:1148
@@ -4508,8 +4508,8 @@ msgid ""
 "= Super+Alt+f + toggle_screen_key = Super+Alt+d + switch_filter_key = "
 "Super+Alt+s +"
 msgstr ""
-"[colorfilter] (Filter color for accessibility purposes) + toggle_window_key "
-"= Super+Alt+f + toggle_screen_key = Super+Alt+d + switch_filter_key = "
+"[colorfilter] (Filterfärg för tillgänglighetssyften) + toggle_window_key = "
+"Super+Alt+f + toggle_screen_key = Super+Alt+d + switch_filter_key = "
 "Super+Alt+s +"
 
 #. type: Plain text
@@ -4520,9 +4520,9 @@ msgid ""
 "zoom_out_button = Super+Button5 + zoom_box_button = Super+Button2 (zoom out "
 "to go back to normal) +"
 msgstr ""
-"[ezoom] Enhanced Zoom Desktop + zoom_in_button = Super+Button4 + "
-"zoom_out_button = Super+Button5 + zoom_box_button = Super+Button2 (zoom out "
-"to go back to normal) +"
+"[ezoom] Förbättrad Zoom Skrivbord + zoom_in_button = Super+Button4 + "
+"zoom_out_button = Super+Button5 + zoom_box_button = Super+Button2 (zooma ut "
+"för att gå tillbaka till normal) +"
 
 #. type: Plain text
 #: HandBook.adoc:1157
@@ -4531,7 +4531,7 @@ msgid ""
 "[neg] Negative (toggle inverse colors of the window or screen) + "
 "window_toggle_key = Super+n + screen_toggle_key = Super+m +"
 msgstr ""
-"[neg] Negative (toggle inverse colors of the window or screen) + "
+"[neg] Negativ (växla inverterade färger i fönstret eller skärmen) + "
 "window_toggle_key = Super+n + screen_toggle_key = Super+m +"
 
 #. type: Plain text
@@ -4542,9 +4542,8 @@ msgid ""
 "opacity_increase_button = Alt+Button4 + opacity_decrease_button = "
 "Alt+Button5 +"
 msgstr ""
-"[obs] Opacity, Brightness and Saturation adjustments + "
-"opacity_increase_button = Alt+Button4 + opacity_decrease_button = "
-"Alt+Button5 +"
+"[obs] Opacitet, ljusstyrka och mättnadsjusteringar + opacity_increase_button "
+"= Alt+Button4 + opacity_decrease_button = Alt+Button5 +"
 
 #. type: Plain text
 #: HandBook.adoc:1164
@@ -4552,15 +4551,13 @@ msgstr ""
 msgid ""
 "[showmouse] (Increase visibility of the mouse pointer) + initiate = Super+k "
 "+"
-msgstr ""
-"[showmouse] (Increase visibility of the mouse pointer) + initiate = Super+k "
-"+"
+msgstr "[showmouse] (Öka synligheten för muspekaren) + initiera = Super+k +"
 
 #. type: Plain text
 #: HandBook.adoc:1166
 #
 msgid "Category Window Management"
-msgstr "Category Window Management"
+msgstr "Kategori Fönsterhantering"
 
 #. type: Plain text
 #: HandBook.adoc:1170
@@ -4569,8 +4566,8 @@ msgid ""
 "[move] Move window + initiate_button = Alt+Button1 (hold Button1 while "
 "moving the mouse) + initiate_key = Alt+F7 (Esc to stop moving) +"
 msgstr ""
-"[move] Move window + initiate_button = Alt+Button1 (hold Button1 while "
-"moving the mouse) + initiate_key = Alt+F7 (Esc to stop moving) +"
+"[move] Flytta fönster + initiate_button = Alt+Button1 (håll knapp1 vid "
+"förflyttning av musen) + initiate_key = Alt+F7 (Esc för att sluta flytta) +"
 
 #. type: Plain text
 #: HandBook.adoc:1174
@@ -4579,8 +4576,9 @@ msgid ""
 "[resize] Resize window + initiate_button = Alt+Button 2 (hold Button2 while "
 "moving the mouse) + initiate_key = Alt+F8 (Esc to stop moving) +"
 msgstr ""
-"[resize] Resize window + initiate_button = Alt+Button 2 (hold Button2 while "
-"moving the mouse) + initiate_key = Alt+F8 (Esc to stop moving) +"
+"[resize] Ändra storlek på fönster + initiate_button = Alt+Button1 (håll "
+"knapp1 vid förflyttning av musen) + initiate_key = Alt+F7 (Esc för att "
+"avsluta) +"
 
 #. type: Plain text
 #: HandBook.adoc:1181
@@ -4593,18 +4591,19 @@ msgid ""
 "next_panel_key = Control+Alt+Tab (cycle between panels and desktop) +\n"
 "prev_panel_key = Shift+Control+Alt+Tab +\n"
 msgstr ""
-"[switcher] Application switcher (switch between windows or panels and\n"
-"                                 the desktop) +\n"
-"next_window_key = Alt+Tab (cycle between windows) +\n"
+"[switcher] Applikationsväxlare (växla mellan fönster eller paneler och\n"
+"                                 skrivbordet) +\n"
+"next_window_key = Alt+Tab (växla mellan fönster) +\n"
 "prev_window_key = Shift+Alt+Tab +\n"
-"next_panel_key = Control+Alt+Tab (cycle between panels and desktop) +\n"
+"next_panel_key = Control+Alt+Tab (växla mellan panelerna och skrivbordet) "
+"+\n"
 "prev_panel_key = Shift+Control+Alt+Tab +\n"
 
 #. type: Title =====
 #: HandBook.adoc:1183
 #, no-wrap
 msgid "How to add a custom keybinding for Mate."
-msgstr "Hur man lägger till en anpassad nyckelbindning för Mate."
+msgstr "Hur du lägger till en anpassad tangentbindning för Mate."
 
 #. type: Plain text
 #: HandBook.adoc:1187
@@ -4613,8 +4612,8 @@ msgid ""
 "Let's take an example: we want that Alt+F3 starts firefox.  type in a "
 "terminal or in Run command (brought up pressing Alt+F2):"
 msgstr ""
-"Let's take an example: we want that Alt+F3 starts firefox.  skriv in en "
-"terminal eller i kommandot Run (tas upp genom att trycka på Alt + F2):"
+"Låt oss ta ett exempel: vi vill att Alt+F3 startar firefox.  skriv in i en "
+"terminal eller i kommandot Run (hämtas upp genom att trycka på Alt+F2):"
 
 #. type: delimited block - 4
 #: HandBook.adoc:1189
@@ -5584,7 +5583,7 @@ msgstr ""
 "Fortfarande i ljuset, F10 tar upp en meny som gör det möjligt att starta om "
 "eller stänga av,\n"
 "och Alt+F4 tar upp ett användargränssnitt direkt med avstängnings- eller "
-"avbrytningsknappar."
+"avbrytningsknappar.\n"
 
 #. type: Title ===
 #: HandBook.adoc:1473
@@ -6924,7 +6923,7 @@ msgstr ""
 "utan att bekräfta: bekräftandet skulle leda till att ersätta alla "
 "Slint-paket med en i en annan version om det finns tillgängligt i "
 "fjärranslutet, eventuellt bryta programvara som inte är kompatibel med denna "
-"andra version."
+"andra version.\n"
 
 #. type: Plain text
 #: HandBook.adoc:1905
@@ -6936,7 +6935,7 @@ msgid ""
 msgstr ""
 "-i kan även uppgradera ett paket som redan är installerat från "
 "https://slackbuilds.org, om en utvecklare av SlackBuild-skriptet har "
-"uppgraderat det, ändrar VERSION-variabeln."
+"uppgraderat det, ändrar VERSION-variabeln.\n"
 
 #. type: Plain text
 #: HandBook.adoc:1906
@@ -6954,7 +6953,7 @@ msgstr ""
 "byggmaterial, eller anpassa bygget. Till exempel låt's antar att du vill "
 "hämta byggmaterial för programvaran *mxml*. Kommandot nedan ger lite "
 "information om programvaran och vilka filer som lagras i "
-"https://slackbuilds.org för det:"
+"https://slackbuilds.org för det:\n"
 
 #. type: delimited block - 4
 #: HandBook.adoc:1918
